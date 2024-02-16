@@ -1,23 +1,19 @@
 /*==================== MENU SHOW X HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close');
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu');
-  });
-}
+const toggleMenu = (toggleBtn, menu) => {
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('show-menu');
+    });
+  }
+};
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if (navClose) {
-  navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
-  });
-}
+toggleMenu(navToggle, navMenu);
+toggleMenu(navClose, navMenu);
 
 /*==================== REMOVE MENU MOBILE ====================*/
 function handleResize() {
@@ -29,25 +25,25 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-  modalBtns = document.querySelectorAll('.services__button'),
-  modalCloses = document.querySelectorAll('.services__modal-close');
+const modalViews = document.querySelectorAll('.services__modal');
+const modalBtns = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal-close');
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active-modal');
-};
+function toggleModal(modalIndex) {
+  modalViews.forEach((modalView, index) => {
+    modalView.classList.toggle('active-modal', index === modalIndex);
+  });
+}
 
 modalBtns.forEach((modalBtn, i) => {
   modalBtn.addEventListener('click', () => {
-    modal(i);
+    toggleModal(i);
   });
 });
 
 modalCloses.forEach((modalClose) => {
   modalClose.addEventListener('click', () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal');
-    });
+    toggleModal(null); // Passing null to close all modals
   });
 });
 
