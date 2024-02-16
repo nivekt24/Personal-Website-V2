@@ -1,0 +1,53 @@
+{
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    
+    "[ejs]":{
+        "editor.formatOnSave": false,
+    },
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+            "eslint.alwaysShowStatus": true,
+            "files.autoSave": "afterDelay",
+    
+            "editor.defaultFormatter": "vscode.html-language-features",
+            "git.autofetch": true,
+        "editor.fontFamily": "'Fira Code',  Consolas, 'Courier New', monospace",
+        "editor.fontSize": 16,
+        "editor.formatOnSave": true,
+        "editor.fontLigatures": false,
+        "git.confirmSync": false,
+        "editor.wordWrap": "on",
+        "files.exclude": {
+            "package-lock.json": true,
+            "yarn.lock": true
+        },
+        "prettier.singleQuote": true,
+        "bracket-pair-colorizer-2.depreciation-notice": false,
+        "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "launch": {
+    
+        "configurations": [],
+        "compounds": []
+    },
+    "cSpell.words": [
+        "btns",
+        "Bulma",
+        "Codekit",
+        "Codepen",
+        "Photoshop",
+        "swiper",
+        "UNICONS",
+        "Xanga"
+    ],
+    // "workbench.colorTheme": "codeSTACKr Theme",
+    
+    }

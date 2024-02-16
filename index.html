@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Web Developer | Kevin Tran</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#main" class="nav__logo"><img src="./assets/img/logo_alt.png"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link">
+                            <i class="uil uil-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message"></i> Contact me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                    <!-- <i class="uil uil-apps"></i> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main" id="main">
+
+        <section class="home section">
+
+            <div class="home__container container grid">
+                <div class="home__content grid">
+
+                    <div class="home__img"><img src="assets/img/self-char_hero.png" alt="" class=""></div>
+
+
+                    <div class="home__data">
+                        <h3>My name is</h3>
+                        <h1 class="home__title"><span class="home__name">Kevin Tran.</span></h1>
+                        <h1 class="home__title">Self-taught Web Developer.</h1>
+
+                        <p class="home__description">I build interactive that run across all platforms & devices </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="home__social-mobile">
+
+                        <a href="https://twitter.com/KTranDev" target="_blank" class="home__social-icon">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/nivekt24" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                        <a href="https://codepen.io/KTranDev" target="_blank" class="home__social-icon">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-right home__scroll-arrow"></i>
+
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">&lt;About me&gt;</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Hi! My name is Kevin, and I am a self-taught web developer born and raised in Orange County,
+                        California. I graduated from California State University, Fullerton. I enjoy building things and
+                        helping people bring their visions to life.
+                    </p>
+
+                    <p class="about__description">
+                        As a web developer, I've had great opportunities to freelance and work for a family-owned
+                        business to create high-performance and interactive websites, ensuring accessibility and
+                        inclusivity for all clients.
+                    </p>
+
+                    <p class="about__description">
+                        When I'm not coding, I am enjoy exploring different restaurants or watching basketball (i.e.
+                        NBA)
+                        or combat sports (i.e. professional boxing, MMA)
+                    </p>
+
+
+
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/" class="button button--flex">
+                            Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <!-- <h2 class="section__title">&lt;Services&gt;</h2> -->
+            <span class="section__subtitle">How I work</span>
+
+            <div class="services__container container grid">
+                <!--==================== SERVICES 1 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Creative<br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Designer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <!-- <i class="uil uil-check-circle services__modal-icon"></i> -->
+                                    <p>I value simple content structure, clean design pattern, and thoughtful
+                                        interaction.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <p>Things I design:
+
+                                        UX, UI, Web, Mobile, Apps, Logos</p>
+                                </li>
+                                <!-- <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li> -->
+                                <li class="services__modal-service"></li>
+                                <p>Tools (for mockups/web design):</p>
+                                <li>Figma</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES 2 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I personally like to code things from scratch and bring my ideas to life.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <p>Languages used:</p>
+                                <li>HTML, CSS, SASS, LESS</li>
+                                </li>
+                                <li class="services__modal-service">
+                                    <p>Dev Tools:</p>
+                                <li>VSCode</li>
+                                <li>Tailwind CSS</li>
+                                <li>Bulma</li>
+                                <li>Codepen</li>
+                                <li>Codekit</li>
+                                <li>Codepen</li>
+                                <li>Github</li>
+                                <li>Gitlab</li>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES 3 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-pen services__icon"></i>
+                        <h3 class="services__title">Branding <br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Branding <br> Designer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p></p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p></p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p></p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">&lt;Projects&gt;</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="portfolio__container container grid">
+                <img src="" alt="" class="about__img">
+
+                <div class="project__data">
+                    <p class="project__details">This is my first personal website, which I designed and developed from
+                        scratch in 2018, without utilizing CSS frameworks like Bootstrap.</p>
+
+                    <div class="skill__list">
+                        <div>
+                            <!-- <span class="about__info-title">03</span> -->
+                            <span class="skill__name">HTML</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">20+</span> -->
+                            <span class="skill__name">CSS3</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">Flexbox</span>
+                        </div>
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">Sass/SCSS</span>
+                        </div>
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">JavaScript</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <img src="" alt="" class="about__img">
+
+                <div class="project__data">
+
+
+                    <p class="project__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                        quaerat tempora et inventore ullam perferendis quas veritatis nesciunt aut. Numquam libero
+                        expedita fuga neque corrupti eos distinctio quos tempore voluptatum!</p>
+
+                    <div class="skill__list">
+                        <div>
+                            <!-- <span class="about__info-title">03</span> -->
+                            <span class="skill__name">HTML</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">20+</span> -->
+                            <span class="skill__name">CSS3</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">Responsive Grid System</span>
+                        </div>
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">JS/ES6</span>
+                        </div>
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">jQuery</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <img src="" alt="" class="about__img">
+
+                <div class="project__data">
+                    <p class="project__details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis cum
+                        quos deserunt nostrum distinctio molestiae tenetur rem? Numquam natus illum, velit molestias
+                        nesciunt earum, eveniet esse eius et magni dolorum!</p>
+
+                    <div class="skill__list">
+                        <div>
+                            <!-- <span class="skill-list-title">03</span> -->
+                            <span class="skill__name">HTML</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">20+</span> -->
+                            <span class="skill__name">CSS3</span>
+                        </div>
+
+                        <div>
+                            <!-- <span class="about__info-title">01</span> -->
+                            <span class="skill__name">JavaScript</span>
+                        </div>
+                        <div>
+
+                            <span class="skill__name">Sass/SCSS</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">&lt;Contact me&gt;</h2>
+            <span class="section__subtitle">Feel free to reach out</span>
+
+            <div class="contact__container container">
+                <div class="contact__information">
+                    <i class="uil uil-envelope-alt contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">kevinntrann@gmail.com</span>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/kevinntrann@gmail.com" class="contact__form" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="contact__content">
+                        <input type="text" class="contact__input" name="name" placeholder="" required>
+                        <label for="text" class="contact__label">Name *</label>
+                    </div>
+                    <div class="contact__content">
+                        <input type="email" class="contact__input" name="email" placeholder="" required>
+                        <label for="text" class="contact__label">Email *</label>
+                    </div>
+                    <input type="hidden" name="_next" value="https://ktran.gq/thankyou.html">
+                    <div class="contact__content">
+                        <input type="text" class="contact__input" name="message" placeholder="" required>
+                        <label for="text" class="contact__label">Message *</label>
+                    </div>
+                    <div class="contact__button">
+                        <button class="button button--flex" type="submit">Send Message <i
+                                class="uil uil-message button__icon"></i></button>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container">
+
+                <div class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                    <a href="https://github.com/nivekt24" target="_blank" class="footer__social-link">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://twitter.com/ktrandev" target="_blank" class="footer__social-link">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="https://codepen.io/KTranDev" target="_blank" class="footer__social-link">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+
+
+
+                <span class="footer__copy">
+                    &#169; Kevin Tran 2022. All rights reserved.
+                </span>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up" alt="hero-section">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
