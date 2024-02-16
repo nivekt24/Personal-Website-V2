@@ -20,25 +20,13 @@ if (navClose) {
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
-
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-  skillsHeader = document.querySelectorAll('.skills__header');
-
-function toggleSkills() {
-  let itemClass = this.parentNode.className;
-
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = 'skills__content skills__close';
-  }
-  if (itemClass === 'skills__content skills__close') {
-    this.parentNode.className = 'skills__content skills__open';
+function handleResize() {
+  if (window.innerWidth > 768) {
+    navMenu.classList.remove('show-menu');
   }
 }
 
-skillsHeader.forEach((el) => {
-  el.addEventListener('click', toggleSkills);
-});
+window.addEventListener('resize', handleResize);
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),

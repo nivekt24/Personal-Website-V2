@@ -305,8 +305,6 @@ img {
 
 /* show menu */
 .show-menu{
-/* bottom: 0; to top: 0; */
-/* top: 0;  */
 right: 0;
 }
 
@@ -325,7 +323,7 @@ right: 0;
 
 
 .home {
-    min-height: 90vh;   
+    /* min-height: 90vh;    */
 }
 
 .home__container {
@@ -394,12 +392,14 @@ right: 0;
     z-index: 6;
     position: absolute;
     right: -50px;
-    bottom: 6rem;
+    top: 40rem;
     padding: 0 2rem;
     transform: rotate(90deg);
     color:var(--first-color);
     transition:.3s;
 }
+
+
 
 .home__scroll-button:hover{
     /* transform: translateY(.25rem); */
