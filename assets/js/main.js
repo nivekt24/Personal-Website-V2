@@ -25,9 +25,9 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal');
-const modalBtns = document.querySelectorAll('.services__button');
-const modalCloses = document.querySelectorAll('.services__modal-close');
+const modalViews = document.querySelectorAll('.skills__modal');
+const modalBtns = document.querySelectorAll('.skills__button');
+const modalCloses = document.querySelectorAll('.skills__modal-close');
 
 function toggleModal(modalIndex) {
   modalViews.forEach((modalView, index) => {
