@@ -17,6 +17,13 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="loading-text">Kevin Tran</div>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -72,12 +79,12 @@
 
 
                     <div class="home__data">
-                        <h3>My name is</h3>
+                        <h3 class="home__title">My name is</h3>
                         <h1 class="home__title"><span class="home__name">Kevin Tran.</span></h1>
                         <h1 class="home__title">Self-taught Web Developer.</h1>
 
                         <p class="home__description">I build interactive that run across all platforms & devices </p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button button--flex" id="contact">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
 
@@ -429,6 +436,56 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loader = document.querySelector(".loader");
+            const navItems = document.querySelectorAll(".nav__item");
+            const navLogo = document.querySelector(".nav__logo");
+            const themeButton = document.getElementById("theme-button");
+            const homeContent = document.getElementsByClassName("home__content")
+            const progressBar = document.querySelector(".progress-bar");
+            const body = document.body;
+
+            const disableScrolling = () => {
+                body.style.overflow = "hidden";
+            };
+
+            const enableScrolling = () => {
+                body.style.overflow = "auto";
+            };
+
+            const hideLoaderAndShowContent = () => {
+                loader.style.display = "none";
+                body.classList.remove("hidden");
+                enableScrolling();
+                animateElements();
+            };
+
+            const animateElements = () => {
+                gsap.from(navLogo, { opacity: 0, y: -20, duration: 0.5 });
+                gsap.from(themeButton, { opacity: 0, y: -20, duration: 0.5 });
+                gsap.from(navItems, { opacity: 0, y: 20, duration: 0.5, stagger: 0.2 });
+                gsap.from(homeContent, { opacity: 0, y: 20, duration: 0.5, stagger: 0.2 })
+            };
+
+            const timeline = gsap.timeline({
+                onComplete: hideLoaderAndShowContent
+            });
+
+            timeline
+                .to(progressBar, { width: "100%", duration: 2, ease: "power1.inOut" });
+
+            disableScrolling();
+        });
+
+
+
+    </script>
+
 
 
 </body>
