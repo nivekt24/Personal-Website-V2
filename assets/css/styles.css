@@ -455,27 +455,18 @@ img {
   margin-bottom: var(--mb-1-5);
 }
 
-.about__info,
-.skill__list {
+.about__info {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 }
 
-/* .about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-} */
-
-.about__info-name,
-.skill-name {
+.about__info-name {
   font-size: var(--small-font-size);
 }
 
 .about__info-title,
-.about__info-name,
-.skill__name {
+.about__info-name {
   display: block;
   text-align: center;
 }
@@ -584,6 +575,59 @@ img {
   visibility: visible;
 }
 
+/*==================== FEATURED PROJECTS ====================*/
+.project__thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.project__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: none;
+  border-radius: 0.5rem;
+  /* justify-self: center;
+  align-self: flex-start; */
+}
+
+.project__data {
+  position: relative;
+}
+
+.project__title {
+  display: block;
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__subtitle {
+  display: block;
+  margin-bottom: var(--mb-1);
+}
+
+.project__link {
+  display: inline-block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.project__button {
+  display: inline-block; /* Ensures the button takes only the necessary width */
+  position: relative; /* Allows positioning of the arrow icon relative to the button */
+}
+
+.project__icon {
+  position: absolute; /* Position the arrow icon relative to its container */
+  transition: transform 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.project__link:hover .project__icon {
+  transform: translateX(
+    5px
+  ); /* Move the arrow icon 5 pixels to the right when hovered */
+}
 /*==================== CONTACT ME ====================*/
 
 .contact {
@@ -807,9 +851,9 @@ button {
     padding: 0 0.5rem;
   }
 
-  .project__img {
+  /* .project__img {
     width: 200px;
-  }
+  } */
 }
 
 /* For medium devices */
@@ -817,13 +861,13 @@ button {
   .home__data {
     grid-column: initial;
   }
-
+  /* 
   .project__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-  }
+  } */
 
   .home__img {
     width: 70%;
@@ -944,9 +988,10 @@ button {
   .skills__icon {
     font-size: 2rem;
   }
-  .service__content {
+  /* .skills__content {
     padding: 6rem 0 2rem 2.5rem;
-  }
+  } */
+
   .skills__modal-content {
     width: 450px;
   }
@@ -957,19 +1002,20 @@ button {
     row-gap: 6rem;
   }
 
-  .portfolio__img {
-    width: 320px;
+  .project__thumbnail {
+    height: 100%;
+    width: 100%;
   }
+
+  .project__img {
+    height: 100%;
+    width: 100%;
+  }
+
   .portfolio__content {
     align-items: center;
   }
 
-  .project {
-    text-align: initial;
-  }
-  .project__bg {
-    background: none;
-  }
   .project__container {
     background-color: var(--first-color-second);
     border-radius: 1rem;
